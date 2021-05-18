@@ -1,0 +1,57 @@
+React --> vantagem do react é diminuir os tempos de espera entre request e a receçao das paginas html atraves de javascript que controla o que vemos no nosso ecra usando DOM. é uma biblioteca de javascript para construir aplicacoes viradas para user interface
+
+Em react temos a vantagem de dividir o código em componentes para que depois a biblioteca react faça render desses mesmos componentes que criámos quando os chamamos para o ecrã
+
+Baseia-se na estrutura de SPA (single page application)
+
+------------------------------------------------------------
+em js n se pode alterar os valores de uma const, apenas os valores de let
+-----------------------------------------------------------
+ambos sao usados através de --> ...
+
+spread operator --> usado para variaveis, para pegar nas propriedades do objeto antigo e meter no objeto novo
+
+	ex:
+		const numbers = [1,2,3]
+		const newNumbers = [...numbers, 4]
+		console.log(newNumbers);
+
+		output = 1, 2, 3, 4
+
+
+rest operator --> usado para passar argumentos em formato de array para tratamento por parte das funcoes, no final a resposta é tmbm retornada em array
+
+	ex:
+		const filter = (...args) => {
+			return args.filter(el => el === 1);
+		}
+		console.log(filter(1,2,3));
+
+
+		output: [1]
+
+-----------------------------------------------------------
+destructuring
+
+permite retirar elementos de arrays ou objetos a nossa escolha e armazena-los em variaveis. 
+
+	ex:
+
+		const numbers = [1,2,3];
+		[num1, ,num3] = numbers;
+		console.log(num1,num3);
+		
+		output: 1 , 3
+
+------------------------------------------------------------
+quanto temos um objeto, se fizermos uma reatribuicao usando por exemplo const secondPerson = person, irá apenas fazer uma cópia do apontador de person. para criar uma cópia legitima devemos usar o operador spread para herdar os atriburos do objeto que pretendemos copiar
+
+
+------------------------------------------------------------
+.map() acede a cada posicao do array e permite fazer alteracoes a cada um
+------------------------------------------------------------
+props.children --> permite que possamos personalizar o nome das nossas divs e personalizar o "background" delas de forma  dividir o css delas em 2 ficheiros e desta forma a organizar melhor o codigo
+
+------------------------------------------------------------
+
+
